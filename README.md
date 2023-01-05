@@ -50,12 +50,32 @@ timePicker("#myInput",{
 
     // example 1
     timePicker("#i1", {
+      bg: "light", // default is light
+      shadow: true, // default is false
+      lang: "en", // default is fa
+      format: 24 // default is 12
+    });
+    // example 2
+    timePicker("#i2", {
       bg: "dark",
-      shadow: false,
+      shadow: true,
       lang: "fa",
       format: 12
     });
-
+    // example 3
+    timePicker("#i3", {
+      bg: "light",
+      shadow: false,
+      lang: "fa",
+      format: 24
+    });
+    // example 4
+    timePicker("#i4", {
+      bg: "dark",
+      shadow: true,
+      lang: "fa",
+      format: 24
+    });
   </script>
 </body>
 </html>
