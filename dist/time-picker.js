@@ -13,6 +13,9 @@ function timePicker(el, opt = {
   }
   if (opt.shadow) {
     elem.style.boxShadow = "0 2px 3px rgb(0,0,0,.2)";
+  } 
+  if(opt.format == undefined){
+    opt.format = 24;
   }
   if (opt.bg == "dark") {
     elem.style.background = "#343a40";
@@ -20,7 +23,9 @@ function timePicker(el, opt = {
   } else if (opt.bg == "light") {
     elem.style.background = "#f8f9fa";
     elem.style.color = "#343a40";
-  } else {
+  } else if(opt.bg == undefined) {
+    elem.style.background = "#fff";
+  }else{
     throw Error("Undefined background\nYou can use just dark or light")
   }
   if (elem == undefined || elem == "") {
@@ -55,12 +60,4 @@ function timePicker(el, opt = {
   if (m < 10)
     m = "0"+m;
   elem.value = h+":"+m+" "+am;
-  /* elem.onfocus = function() {
-    elem.setAttribute("lang", "time");
-    elem.value += am;
-  };
-  elem.onblur = function() {
-    elem.setAttribute("lang", "text")
-  }*/
-  //return opt;
 }
