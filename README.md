@@ -1,4 +1,4 @@
-# timePicker 
+# timePicker
 ## Time picker v-0.1.2
 
 Useg:
@@ -13,12 +13,12 @@ Useg:
 ## Example:
 ```html
 <script type="text/javascript">
-timePicker("#myInput",{
-  bg: "light",
-  shadow: true,
-  lang: "en",
-  format: 12
-})
+  timePicker("#myInput", {
+    bg: "light",
+    shadow: true,
+    lang: "en",
+    format: 12
+  })
 </script>
 ```
 ## Full example:
