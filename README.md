@@ -1,6 +1,6 @@
 # timePicker
 ## Time picker v-0.1.2
-A JavaScript plugin for taking time.
+A JavaScript plugin for taking time. <br>
 Useg:
 ### CDN:
 ```html
