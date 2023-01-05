@@ -9,3 +9,15 @@ Useg:
 ### locale:
 ```html
 <script src="dist/time-picker.min.js"></script>
+```
+## Example:
+```html
+<script type="text/javascript">
+timePicker("#myInput",{
+  bg: "light",
+  shadow: true,
+  lang: "en",
+  format: 12
+})
+</script>
+```
